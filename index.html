@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Transport Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Vehicle Transport Converter</h1>
+      <div class="converter">
+        <label for="distance">Enter Distance (in km):</label>
+        <input type="number" id="distance" placeholder="Enter distance" />
+
+        <div class="vehicle-selection">
+          <label for="vehicle">Select Vehicle:</label>
+          <select id="vehicle">
+            <option value="" disabled selected>Choose vehicle</option>
+            <option value="Maruti Suzuki Alto">Maruti Suzuki Alto</option>
+            <option value="Hyundai i20">Hyundai i20</option>
+            <option value="Tata Nexon">Tata Nexon</option>
+            <option value="Mahindra Thar">Mahindra Thar</option>
+            <option value="Toyota Innova Crysta">Toyota Innova Crysta</option>
+            <option value="Kia Seltos">Kia Seltos</option>
+            <option value="Renault Kwid">Renault Kwid</option>
+            <option value="Ford EcoSport">Ford EcoSport</option>
+            <option value="Tata Tiago">Tata Tiago</option>
+          </select>
+        </div>
+
+        <button id="calculateBtn">Calculate</button>
+        <div id="result"></div>
+      </div>
+      <div class="comparison">
+        <h2>Comparison with Other Vehicles</h2>
+        <div id="comparisonResult"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
